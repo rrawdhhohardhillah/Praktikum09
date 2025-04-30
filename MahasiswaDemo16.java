@@ -37,6 +37,8 @@ public class MahasiswaDemo16 {
                         scan.nextLine(); 
                         dinilai.tugasDinilai(nilai);
                         System.out.printf("Format: Nilai tugas %s adalah %d\n", dinilai.nama, nilai);
+                        String biner = stack.konversiDesimalKeBiner(nilai);
+                        System.out.println("Nilai Biner Tugas: " + biner);
                     }
                     break;
                 case 3:
@@ -50,6 +52,18 @@ public class MahasiswaDemo16 {
                     System.out.println("Nama\tNIM\tKelas");
                     stack.print();
                     break;
+                
+                case 5:
+                Mahasiswa16 bawah = stack.elemenPertama();
+                if (bawah != null) {
+                    System.out.println("Tugas pertama dikumpulkan oleh: " + bawah.nama);
+                }
+                break;
+
+                case 6:
+                    System.out.println("Jumlah tugas yang sudah dikumpulkan: " + stack.count());
+                break;
+
                 default:
                     System.out.println("Pilihan tidak valid.");
             }
