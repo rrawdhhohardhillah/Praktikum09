@@ -7,7 +7,7 @@ public class MahasiswaDemo16 {
         int pilih;
 
         do {
-            System.out.println("Menu:");
+            System.out.print("Menu:");
             System.out.println("1. Mengumpulkan Tugas");
             System.out.println("2. Menilai Tugas");
             System.out.println("3. Melihat Tugas Teratas");
